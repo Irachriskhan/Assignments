@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Registration page</title>
+    </head>
+    <body>
+        <div class="header">
+            ZURI Course
+        </div>
+        <div class="nav">
+            <a href="#home" target="_self" >Home</a>
+            <a href="index.html" class="active">Register</a>
+        </div>
+        <div class="main">
+            <div class="leftside">
+                
+            </div>
+            <div class="center">
+                <div class="form">
+                    <h2>Register here</h2>
+                    <form action="login.html" id="submit" >
+                        <label for="faname">First name:</label>
+                        <input type="text" name="fname" id="faname" placeholder="Enter your first name" required>
+
+                        <label for="laname">Last name:</label>
+                        <input type="text" name="laname" id="laname" placeholder="Enter your last name" required>
+
+                        <label for="fone">Phone number:</label>
+                        <input type="text" name="phone" id="fone" placeholder="Enter your phone number" required>
+                        
+                        <label for="mail">Email:</label>
+                        <input type="email" name="email" id="mail" placeholder="ex: myemail@example.com" required>
+                        
+                        <label for="gen">Gender</label>
+                            <select name="gender" id="gen">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            </select>
+                        
+                        <label for="dobi">Date of birth:</label>
+                        <input type="date" name="dob" id="dobi">
+                        
+                        <label for="col">Favorite color:</label>
+                            <input type="color" name="color" id="col">
+                        <label for="psw" required>Password:</label>
+                        <input type="password" name="password" id="" placeholder="password" required>
+                        <div class="buton">
+                            <button type="button" class="cancbtn">Cancel</button>
+                            <button type="submit" class="regbtn">Register</button>
+                        </div>
+                    </form>
+                    <script>
+                        function myFunction() {
+                          document.getElementById("submit").submit();
+                        }
+                        </script>
+                </div>
+            </div>
+            <div class="lightside">
+                
+            </div>
+        </div>
+        <div class="footer">
+            &copy; Copyright
+        </div>
+    </body>
+</html>
